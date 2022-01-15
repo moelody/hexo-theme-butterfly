@@ -163,6 +163,10 @@ index_post_content:
   method: 3
   length: 500 # if you set method to 2 or 3, the length need to config
 
+# anchor
+# when you scroll in post, the URL will update according to header id.
+anchor: false
+
 # Post
 # --------------------------------------
 
@@ -215,10 +219,6 @@ photofigcaption: false
 # false: disable pagination
 post_pagination: 1
 
-# anchor
-# when you scroll in post, the URL will update according to header id.
-anchor: false
-
 # Displays outdated notice for a post (文章過期提醒)
 noticeOutdate:
   enable: false
@@ -254,6 +254,7 @@ addtoany:
 
 comments:
   # Up to two comments system, the first will be shown as default
+  # Choose: Disqus/Disqusjs/Livere/Gitalk/Valine/Waline/Utterances/Facebook Comments/Twikoo/Giscus
   use: # Valine,Disqus
   text: true # Display the comment name next to the button
   # lazyload: The comment system will be load when comment element enters the browser's viewport.
@@ -466,6 +467,7 @@ site_verification:
 #   toc_color: "#00c4b6"
 #   blockquote_padding_color: "#49b1f5"
 #   blockquote_background_color: "#49b1f5"
+#   scrollbar_color: "#49b1f5"
 
 # The top_img settings of home page
 # default: top img - full screen, site info - middle (默認top_img全屏，site_info在中間)
@@ -560,8 +562,8 @@ display_mode: light
 beautify:
   enable: false
   field: post # site/post
-  title-prefix-icon: '\f0c1'
-  title-prefix-icon-color: '#F47466'
+  title-prefix-icon: # '\f0c1'
+  title-prefix-icon-color: # '#F47466'
 
 # Global font settings
 # Don't modify the following settings unless you know how they work (非必要不要修改)
@@ -836,6 +838,7 @@ CDN:
   # comments
   gitalk:
   gitalk_css:
+  blueimp_md5:
   valine:
   disqusjs:
   disqusjs_css:
